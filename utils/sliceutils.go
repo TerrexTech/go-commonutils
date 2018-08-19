@@ -71,3 +71,20 @@ func AreElementsInSlice(slice interface{}, in interface{}) bool {
 
 	return true
 }
+
+// AreElementsInSliceStrict is same as AreElementsInSlice, except
+// this also checks if the provided slices have same length.
+func AreElementsInSliceStrict(slice interface{}, in interface{}) bool {
+	s := reflect.ValueOf(slice)
+	i := reflect.ValueOf(in)
+
+	if s.Kind() != reflect.Slice || i.Kind() != reflect.Slice {
+		return false
+	}
+
+	if s.Len() != i.Len() {
+		return false
+	}
+
+	return AreElementsInSlice(slice, in)
+}
