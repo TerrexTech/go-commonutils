@@ -7,13 +7,16 @@ This package provides some convenience utilities. New utilities will be added as
 
 ### Current Utilities:
 
-* **strings**
+* **errors**
+  * [ErrorStackTrace][7]
+
+* **slices**
   * [AreElementsInSlice][1]
   * [AreElementsInSliceStrict][2]
   * [IndexInSlice][3]
   * [IsElementInSlice][4]
 
-* **slices**
+* **strings**
   * [ParseHosts][5]
   * [StandardizeSpaces][6]
 
@@ -24,3 +27,4 @@ This package provides some convenience utilities. New utilities will be added as
   [4]: https://godoc.org/github.com/TerrexTech/go-commonutils/utils#IsElementInSlice
   [5]: https://godoc.org/github.com/TerrexTech/go-commonutils/utils#ParseHosts
   [6]: https://godoc.org/github.com/TerrexTech/go-commonutils/utils#StandardizeSpaces
+  [7]: https://godoc.org/github.com/TerrexTech/go-commonutils/utils#ErrorStackTrace
