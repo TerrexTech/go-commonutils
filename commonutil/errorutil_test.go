@@ -1,4 +1,4 @@
-package utils
+package commonutil
 
 import (
 	"regexp"
@@ -15,12 +15,12 @@ var _ = Describe("ErrorUtils", func() {
 			st := ErrorStackTrace(err)
 
 			//  Sample string that passes this regex: "errorutils_test.go:16"
-			rgx := regexp.MustCompile(`errorutils_test\.go:[0-9]+`)
+			rgx := regexp.MustCompile(`errorutil_test\.go:[0-9]+`)
 			match := rgx.FindString(st)
 
 			// Check if the error has regex match, then its a StackTrace
 			// and our test is good.
-			Expect(match != "").To(BeTrue())
+			Expect(match).ToNot(BeEmpty())
 		})
 	})
 })
