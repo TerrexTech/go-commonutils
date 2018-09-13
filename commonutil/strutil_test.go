@@ -1,4 +1,4 @@
-package utils
+package commonutil
 
 import (
 	. "github.com/onsi/ginkgo"
