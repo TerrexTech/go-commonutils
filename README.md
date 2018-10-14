@@ -13,6 +13,12 @@ This package provides some convenience utilities. New utilities will be added as
 * **errors**
   * [ErrorStackTrace][7]
 
+* **float64**
+  * [AssertInt64][9]
+
+* **int64**
+  * [AssertInt64][10]
+
 * **slices**
   * [AreElementsInSlice][1]
   * [AreElementsInSliceStrict][2]
@@ -31,4 +37,6 @@ This package provides some convenience utilities. New utilities will be added as
   [5]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#ParseHosts
   [6]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#StandardizeSpaces
   [7]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#ErrorStackTrace
-  [7]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#ValidateEnv
+  [8]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#ValidateEnv
+  [9]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#AssertFloat64
+  [10]: https://godoc.org/github.com/TerrexTech/go-commonutils/commonutil#AssertInt64
